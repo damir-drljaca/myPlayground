@@ -40,10 +40,10 @@ document.getElementById("navBottom").innerHTML =
  '<nav class="navbar navbar-default navbar-fixed-bottom">'+
     '<div class="container">'+
       '<ul class="nav nav-pills">'+
-       '<li role="presentation"><a href="#">Booking</a></li>'+
-       '<li role="presentation"><a href="#">Records</a></li>'+
-       '<li role="presentation"><a href="#">Media</a></li>'+
-       '<li role="presentation"><a href="#">Contact</a></li>'+
+       '<li role="presentation"><a href="simple_form.html">Booking</a></li>'+
+       '<li role="presentation"><a href="records.html">Records</a></li>'+
+       '<li role="presentation"><a href="media.html">Media</a></li>'+
+       '<li role="presentation"><a href="simple_form.html">Contact</a></li>'+
        // '<li class="right"><i class="fa fa-facebook-official" aria-hidden="true"></i>'+
        // '<li class="right"><i class="fa fa-facebook-official" aria-hidden="true"></i>'+
        // '<li class="right"><i class="fa fa-facebook" aria-hidden="true"></i>'+
