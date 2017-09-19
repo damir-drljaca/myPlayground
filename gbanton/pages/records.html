@@ -1,40 +1,68 @@
 <!DOCTYPE html>
-<html ng-app="app">
 <head>
   <title>Records</title>
-  <div id="apiLINKS"></div>
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   <link data-require="bootstrap-css@*" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-   
-  <!-- <div>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="..styles/bootstrap.min.css">
+
   </div> -->
 </head>
 <body ng-view="">
 <!-- This is the logo source for each page. -->
 <img id="header-img" src=../images/georgebanton_logo.png  style="background-size: cover; background-position: center; height: 200px" alt=""/>
 <!-- This is the top header (which does not float) -->
-<nav id="navMenu"></nav>
+<div class="menu">
+ <nav class="navbar navbar-default home-nav" role="presentation">
+ <div class ="container">
+ <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-pills" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>'
+      </button>
+    </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav nav nav-pills">
+  <input type="hidden" id="selected_menu_item" value="=$selectedMenuId; ?>" />
+   <li role="presentation" class="left"><a href="records.html">Music</a></li>
+   <li role="presentation" class="left"><a href="about.html">Biography</a></li>
+   <li role="presentation" class="left"><a href="media.html">Media</a></li>
+   <li role="presentation" class="left"><a href="gallery.html">Gallery</a></li>
+   <li role="presentation" class="left"><a href="links.html">Links</a></li>
+   <li role="presentation" class="left"><a href="simple_form.html">Contact</a></li>
+   <li class="nav navbar-nav navbar-right"><a href="https://www.facebook.com/bantongeorge">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+   <li class="nav navbar-nav navbar-right"><a href="https://itunes.apple.com/ca/artist/george-banton/id74425220">Apple <i class="fa fa-user" aria-hidden="true"></i></a></li>
+   <li class="nav navbar-nav navbar-right"><a href="https://open.spotify.com/artist/1pJghkzjO6ot4FDAjAY1B7">Spotify <i class="fa fa-user" aria-hidden="true"></i></a></li>
+  </ul>
+  </div>
+ </nav>
+</div>
 <!-- This is the bottom header (which floats as your scroll through the page) -->
-<nav id="navBottom"></nav>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="simple_form.html">Booking</a></li>
+      <li role="presentation"><a href="records.html">Records</a></li>
+      <li role="presentation"><a href="media.html">Media</a></li>
+      <li role="presentation"><a href="simple_form.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 <!-- Content must go below this, until stop comment -->
 <div id="main">
-  <div class="inner-container">
+  <div class="container-fluid">
     <h1 class="sr-only">Music</h1>
     <div class="release-items">
       <div class="row">
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/leave-me-at-the-altar-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/10605/images/8692/george_banton_leave_me_at_the_altar__09984.1425421821.1280.1280.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/10605/images/8692/george_banton_leave_me_at_the_altar__09984.1425421821.1280.1280.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2017</span>
-                <h2 class="release-title">Leave Me At The Altar</h2>
+                <h3 class="release-title">Leave Me At The Altar</h3>
               </div>
             </a>
           </article>
@@ -42,11 +70,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/sweeter-she-is-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3779/images/3107/LDR025.2-2__44571.1398370272.400.400.jpg?c=2" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3779/images/3107/LDR025.2-2__44571.1398370272.400.400.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2016</span>
-                <h2 class="release-title">Sweeter She Is</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Sweeter She Is</h3>
               </div>
             </a>
           </article>
@@ -54,11 +80,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/roll-away-the-stone-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3882/images/3178/LLT3110.2-2__13326.1398370616.1280.1280.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3882/images/3178/LLT3110.2-2__13326.1398370616.1280.1280.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2016</span>
-                <h2 class="release-title">Roll Away The Stone</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Roll Away The Stone</h3>
               </div>
             </a>
           </article>
@@ -67,11 +91,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/youre-all-i-need-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3873/images/3170/LLT200.2-2__52614.1398370582.400.400.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3873/images/3170/LLT200.2-2__52614.1398370582.400.400.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2016</span>
-                <h2 class="release-title">You're All I Need</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">You're All I Need</h3>
               </div>
             </a>
           </article>
@@ -79,11 +101,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/caribbean-gospel-rhythm-vol-3-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3872/images/3169/LLT1770.2-2__31961.1398370573.1280.1280.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3872/images/3169/LLT1770.2-2__31961.1398370573.1280.1280.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2015</span>
-                <h2 class="release-title">Caribbean Gospel Rhythm</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Caribbean Gospel Rhythm</h3>
               </div>
             </a>
           </article>
@@ -91,11 +111,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/thank-you-lord-for-your-blessings-on-me-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3874/images/3171/LLT2024.2-2__84860.1398370585.400.400.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3874/images/3171/LLT2024.2-2__84860.1398370585.400.400.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2015</span>
-                <h2 class="release-title">Thank You Lord for Your Blessing On Me</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Thank You Lord for Your Blessing On Me</h3>
               </div>
             </a>
           </article>
@@ -103,11 +121,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/jesus-is-everything-to-me-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3869/images/10998/LLT111006__50547.1487872351.1280.1280.png?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3869/images/10998/LLT111006__50547.1487872351.1280.1280.png?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2015</span>
-                <h2 class="release-title">Jesus is Everything To Me</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Jesus is Everything To Me</h3>
               </div>
             </a>
           </article>
@@ -115,11 +131,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/jesus-blood-covers-it-all-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3883/images/3179/LLT3115.2-2__24227.1398370619.1280.1280.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3883/images/3179/LLT3115.2-2__24227.1398370619.1280.1280.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2015</span>
-                <h2 class="release-title">Zero</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Jesus's Blood Covers It All</h3>
               </div>
             </a>
           </article>
@@ -127,11 +141,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/give-it-all-to-jesus-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3871/images/3167/LLT1619.2-2__15285.1398370566.400.400.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3871/images/3167/LLT1619.2-2__15285.1398370566.400.400.jpg?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2015</span>
-                <h2 class="release-title">Give It All To Jesus</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Give It All To Jesus</h3>
               </div>
             </a>
           </article>
@@ -139,11 +151,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/best-of-george-banton-vol-1-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3866/images/10999/LL1110007__80973.1487872657.400.400.png?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3866/images/10999/LL1110007__80973.1487872657.400.400.png?c=2" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2015</span>
-                <h2 class="release-title">Best of George Banton Vol.1</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Best of George Banton Vol.1</h3>
               </div>
             </a>
           </article>
@@ -151,11 +161,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/jesus-will-fix-it-for-you-george-banton/">
-              <img width="350" height="350" src="http://www.vpreggae.com/jesus-will-fix-it-for-you-george-banton/" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://www.vpreggae.com/jesus-will-fix-it-for-you-george-banton/" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2014</span>
-                <h2 class="release-title">Jesus Will Fix It For You</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Jesus Will Fix It For You</h3>
               </div>
             </a>
           </article>
@@ -163,11 +171,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="http://www.vpreggae.com/jesus-will-fix-it-for-you-george-banton/">
-              <img width="350" height="350" src="http://cdn3.bigcommerce.com/s-df4cz/products/3881/images/3177/LLT3011.2-2__63501.1398370613.1280.1280.jpg?c=2" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="../images/Jesus_will_fix.jpg" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2014</span>
-                <h2 class="release-title">Jesus Will Fix it For You</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">Jesus Will Fix it For You</h3>
               </div>
             </a>
           </article>
@@ -175,11 +181,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="#">
-              <img width="350" height="350" src="http://www.georgebanton.com/images/crg_cd.jpg" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://www.georgebanton.com/images/crg_cd.jpg" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2013</span>
-                <h2 class="release-title">CARIBBEAN REVIVAL GOSPEL RHYTHMS VOL.1</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">CARIBBEAN REVIVAL GOSPEL RHYTHMS VOL.1</h3>
               </div>
             </a>
           </article>
@@ -187,23 +191,9 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="#">
-              <img width="350" height="350" src="http://www.georgebanton.com/images/lup_cd.jpg" class="img-responsive album-cover wp-post-image" alt=""                sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://www.georgebanton.com/images/lup_cd.jpg" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2013</span>
-                <h2 class="release-title">LET US PRAISE THE LORD</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
-              </div>
-            </a>
-          </article>
-        </div>
-        <div class="col-sm-4">
-          <article class="release-item">
-            <a href="http://chrisbrownworld.com/music/dont-think-they-know/">
-              <img width="350" height="350" src="http://www.georgebanton.com/images/ty_cd.jpg" class="img-responsive album-cover wp-post-image" alt=""sizes="(max-width: 350px) 100vw, 350px">
-              <div class="release-overlay">
-                <span class="release-year">2013</span>
-                <h2 class="release-title">THANK YOU LORD FOR YOUR BLESSINGS ON ME</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">LET US PRAISE THE LORD</h3>
               </div>
             </a>
           </article>
@@ -211,11 +201,19 @@
         <div class="col-sm-4">
           <article class="release-item">
             <a href="#">
-              <img width="350" height="350" src="http://www.georgebanton.com/images/si_cd.jpg" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <img width="350" height="350" src="http://www.georgebanton.com/images/ty_cd.jpg" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
               <div class="release-overlay">
-                <span class="release-year">2013</span>
-                <h2 class="release-title">Sax Instrumentals</h2>
-                <img src="http://chrisbrownworld.com/wp-content/themes/chrisbrown/assets/img/icons/music-more.png" class="img-responsive center-block" alt="More">
+                <h3 class="release-title">THANK YOU LORD FOR YOUR BLESSINGS ON ME</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-sm-4">
+          <article class="release-item">
+            <a href="#">
+              <img width="350" height="350" src="http://www.georgebanton.com/images/si_cd.jpg" style="height: 199px; width: 300px" class="img-responsive album-cover wp-post-image" alt="" sizes="(max-width: 350px) 100vw, 350px">
+              <div class="release-overlay">
+                <h3 class="release-title">Sax Instrumentals</h3>
               </div>
             </a>
           </article>
@@ -224,73 +222,6 @@
     </div>
   </div>
 </div>
-<!-- <div class="container">
-	<div class="buttons">
-        <button class="grid">Grid View</button>
-        <button class="list">List View</button>
-    </div>
-	<ul class ="list">
-	<div class="row text-center text-lg-left">
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/jk_cd.jpg" width="100" border="2" height="100" alt="">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/cgr2_cd.jpg" width="100" border="2" height="100" alt"">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/fh_cd.jpg" width="100" border="2" height="100" alt"">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/si_cd.jpg" width="100" border="2" height="100" alt="">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/lmata_cd.jpg" width="100" border="2" height="100" alt="">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/cct_cd.jpg" width="100" border="2" height="100" alt="">
-			</a>
-		</div>	
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/jwfi_cd.jpg" width="100" border="2" height="100" alt="">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/george_ntl.gif" width="100" border="2" height="100" alt="">
-			</a>
-		</div>
-		<div class="col-lg-4 col-sm-6">
-			<a href="#" class="d-block mb-4 h-100">
-				<img class="img-fluid img-thumbnail" src="http://www.georgebanton.com/images/cgr_cd.gif" width="100" border="2" height="100" alt="">
-			</a>
-		</div>
-	</div>
-	</ul>
-	<table style="float: right;">
-		<tr>
-			<td>
-				<a href="#" id="gridview" class="switcher"><img src="images/grid-view.png" alt="Grid">
-				</a>
-			</td>
-			<td>&nbsp;&nbsp;</td>
-			<td><a href="#" id="listview" class="switcher active"><img src="images/list-view-active.png" alt="List">
-				</a>
-			</td>
-		</tr>
-	</table>
-</div>	 -->
 <br>
 <br>
 <!-- Content must stop here. -->
@@ -299,6 +230,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script data-require="angular.js@*" data-semver="1.2.14" src="http://code.angularjs.org/1.2.14/angular.js"></script>
 <script src="http://code.angularjs.org/1.2.14/angular-route.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
 
 
 </body>
