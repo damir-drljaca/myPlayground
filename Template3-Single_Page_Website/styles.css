@@ -1,0 +1,160 @@
+nav {
+    
+    position: fixed;
+    width: 100%;
+    background-color: #0CA5B0;
+    text-align: center;
+    margin-bottom: 20px;
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-size: 50px;
+
+}
+
+a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond';
+    color: #eee;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    color: #0CA5B0;
+    font-family: 'Cormorant Garamond';
+    /*border-bottom: 3px solid #e66c7e;*/
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 35px;
+    margin-bottom: 57px;
+    text-align: center;
+    text-indent: 24px;
+    text-transform: uppercase;
+}
+
+h2{
+    padding-left: 20px;
+    font-family: 'Cormorant Garamond';
+}
+
+h3{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    font-family: 'Cormorant Garamond';
+}
+#h3{
+    color:black;
+}
+
+h4{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p { 
+    color: #eee; 
+    font-family: 'Droid Sans', sans-serif; 
+    font-size: 15px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    margin: 0 0 14px;
+    float: left;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/*#bioPicImg{  
+    height: 408px;
+    width: 616px;
+}*/
+
+.section {
+    height: 100%;
+    padding-top: 20px;
+
+}
+.filmSection{
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.movieButton{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+    align-items: justify;
+    position: absolute;
+    bottom: 2.5%;
+    left:1.5%;
+    overflow: scroll;
+    width: 100%
+}
+#movieDescription1{
+    margin-top: -250px;
+    visibility: hidden;
+    color: white;
+    position: absolute;
+}
+#movieDescription2{
+    margin-top: -250px;
+    visibility: hidden;
+    color: white;
+    position: absolute;
+}
+#movieDescription3{
+    margin-top: -250px;
+    visibility: hidden;
+    color: white;
+    position: absolute;
+}
+#movieDescription4{
+    margin-top: -250px;
+    visibility: hidden;
+    color: white;
+    position: absolute;
+}
+#movieDescription5{
+    margin-top: -250px;
+    visibility: hidden;
+    color: white;
+    position: absolute;
+}
+
+#bio{
+    color: black;
+    font-family: 'Cormorant Garamond';
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px;
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto 48px;
+    float: none;
+    text-align: justify;
+}
+#name{
+    text-transform: none;
+}

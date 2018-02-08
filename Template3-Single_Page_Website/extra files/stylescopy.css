@@ -1,0 +1,65 @@
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: skyblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h3{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/*#bioPicImg{  
+    height: 408px;
+    width: 616px;
+}*/
+
+.section {
+    height: 100%;
+    padding-top: 20px;
+
+}
+.filmSection{
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.movieButton{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+    align-items: justify;
+    position: absolute;
+    bottom:2.5%;
+    left:1.5%;
+}
