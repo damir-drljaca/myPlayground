@@ -13,8 +13,9 @@ $('.nav').click(function() {
     var id = $(this).attr('id');
     $('html, body').animate({
         scrollTop: ($('#' + id + '.section').offset().top)
-    }, 1000);
+    }, 1500);
 });
+
 
 //To change color of h1, h2, h3, h4, h5, h6 to white accordingly
 function onMouseOver(){
@@ -28,6 +29,7 @@ function onMouseOver(){
 	movieButton3.style.visibility = "hidden";
 	movieButton4.style.visibility = "hidden";
 	movieButton5.style.visibility = "hidden";
+	movieButton6.style.visibility = "hidden";
 	filmPageToggle.style.visibility = "hidden";
 	
 };
@@ -50,12 +52,20 @@ function filmBtnOnClick(){
 	movieButton3.style.visibility = "visible";
 	movieButton4.style.visibility = "visible";
 	movieButton5.style.visibility = "visible";
+	movieButton6.style.visibility = "visible";
 	filmPageToggle.style.visibility = "visible";
 	document.querySelector("#movieDescription1").style.visibility = "hidden";
 	document.querySelector("#movieDescription2").style.visibility = "hidden";
 	document.querySelector("#movieDescription3").style.visibility = "hidden";
 	document.querySelector("#movieDescription4").style.visibility = "hidden";
 	document.querySelector("#movieDescription5").style.visibility = "hidden";
+	document.querySelector("#movieDescription6").style.visibility = "hidden";
+	document.querySelector("#playButton1").style.visibility = "hidden";
+	document.querySelector("#playButton2").style.visibility = "hidden";
+	document.querySelector("#playButton3").style.visibility = "hidden";
+	document.querySelector("#playButton4").style.visibility = "hidden";
+	document.querySelector("#playButton5").style.visibility = "hidden";
+	document.querySelector("#playButton6").style.visibility = "hidden";
 };
 
 
@@ -64,12 +74,14 @@ movieButton1.addEventListener("click", function(){
 	//When button is clicked it will show change background to the poster of the movie and also provide a description of the movie.
 	document.querySelector(".filmSection").style.backgroundImage = "url(photos/krivina_still1.jpg)";
 	document.querySelector("#movieDescription1").style.visibility = "visible";
+	document.querySelector("#playButton1").style.visibility = "visible";
 	onMouseOver();
 }, false);
 movieButton2.addEventListener("click", function(){
 	//When button is hovered over it will show change background to the poser of the movie and also provide a description of the movie.
 	document.querySelector(".filmSection").style.backgroundImage = "url(photos/fuse_still2.jpg)";
 	document.querySelector("#movieDescription2").style.visibility = "visible";
+	document.querySelector("#playButton2").style.visibility = "visible";
 	onMouseOver();
 }, false);
 
@@ -77,18 +89,28 @@ movieButton3.addEventListener("click", function(){
 	//When button is hovered over it will show change background to the poser of the movie and also provide a description of the movie.
 	document.querySelector(".filmSection").style.backgroundImage = "url(photos/womaninpurple1.jpg)";
 	document.querySelector("#movieDescription3").style.visibility = "visible";
+	document.querySelector("#playButton3").style.visibility = "visible";
 	onMouseOver();
 }, false);
 movieButton4.addEventListener("click", function(){
 	//When button is hovered over it will show change background to the poser of the movie and also provide a description of the movie.
 	document.querySelector(".filmSection").style.backgroundImage = "url(photos/still_lonely_drive_2.jpg)";
 	document.querySelector("#movieDescription4").style.visibility = "visible";
+	document.querySelector("#playButton4").style.visibility = "visible";
 	onMouseOver();
 }, false);
 movieButton5.addEventListener("click", function(){
 	//When button is hovered over it will show change background to the poser of the movie and also provide a description of the movie.
 	document.querySelector(".filmSection").style.backgroundImage = "url(photos/mobilni2.jpg)";
 	document.querySelector("#movieDescription5").style.visibility = "visible";
+	document.querySelector("#playButton5").style.visibility = "visible";
+	onMouseOver();
+}, false);
+movieButton6.addEventListener("click", function(){
+	//When button is hovered over it will show change background to the poser of the movie and also provide a description of the movie.
+	document.querySelector(".filmSection").style.backgroundImage = "url(photos/waiting_room2.jpg)";
+	document.querySelector("#movieDescription6").style.visibility = "visible";
+	document.querySelector("#playButton6").style.visibility = "visible";
 	onMouseOver();
 }, false);
 

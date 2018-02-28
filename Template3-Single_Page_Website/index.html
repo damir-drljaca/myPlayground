@@ -4,6 +4,7 @@
 	<title>Igor Drljaca</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 
@@ -26,8 +27,11 @@
         <h3>2012, 70 Minutes, HDCAM</h3>
         <p>Miro, an immigrant from the former Yugoslavia lives in Toronto. When he finds out that his pre-war friend Dado, who has been missing for almost two decades, is now wanted for war-era crimes, his life starts to unravel. Upon hearing that Dado still visits a village on the outskirts of Sarajevo, Miro embarks on a trip back to Bosnia to find his friend.
         <br>  
-        Director's Note: During my film studies, I wanted to make a film that could capture a feeling of loss, coupled with the inability to move on with one’s life. This was a feeling that resonated with me and many other people who emigrated to the West from former Yugoslavia as a result of the war.</p>
+        Director's Note: During my film studies, I wanted to make a film that could capture a feeling of loss, coupled with the inability to move on with one’s life. This was a feeling that resonated with me and many other people who emigrated to the West from former Yugoslavia as a result of the war.<a href="#">[more info]</a></p> 
       </div>
+        <div class="playButton" id="playButton1">
+          <a href="#"><i class="far fa-play-circle" ></i></a>
+        </div> 
       <div id="movieDescription2">
         <h2>The Fuse: Or How I Burned Simon Bolivar</h2>
         <h3>Original title: Kako Sam Zapalio Simona Bolivara</h3>
@@ -36,31 +40,49 @@
         <br>
         Director’s Note: The Fuse is a story of childhood naïveté, and of those moments, in this case rather ominous ones, which inevitably teach a child that he is not the center of the universe. In the Fuse, I wanted to explore the universality of this feeling, albeit within the very specific and traumatic context of the Bosnian civil war. Sensing that everything is about to change, the nine-year-old boy, Igor, appears even slightly excited, being oblivious to the chaos that was about to engulf Sarajevo.</p>
       </div>
+      <div class="playButton" id="playButton2">
+          <a href="#"><i class="far fa-play-circle" ></i></a>
+        </div> 
       <div id="movieDescription3">
         <h2>Women in Purple</h2>
         <h3>Original Title:  Žena u Ljubičastom</h3>
         <h3>2010, 14 Minutes, HDCAM</h3>
         <p>Mirza, a young Sarajevo orphan, earns easy money by assisting a local drug dealer. Dispatched on a job one day, a chance encounter makes him painfully aware of his despicable role - but equally of the possibility of changing things for the better.</p>
       </div>
+      <div class="playButton" id="playButton3">
+          <a href="#"><i class="far fa-play-circle" ></i></a>
+        </div> 
       <div id="movieDescription4">
         <h2>On a Lonely Drive</h2>
         <h3>2009, 7 Minutes, HDCAM</h3>
         <p>As a couple argues, their young son goes outside to drown them out. When the father takes off in his car in an attempt to calm down, he is unaware that his leisurely drive might have tragic consequences.</p>
       </div>
+      <div class="playButton" id="playButton4">
+          <a href="#"><i class="far fa-play-circle" ></i></a>
+        </div> 
       <div id="movieDescription5">
         <h2>Mobilni Snovi</h2>
         <h3>2008, 10 Minutes, Digi-Beta</h3>
         <p>An elderly couple begin to lose their bond as the monotony of their lives erodes their ability to communicate.</p>
       </div>
-      <!-- Use formate when adding new movie descroption
-
+      <div class="playButton" id="playButton5">
+          <a href="#"><i class="far fa-play-circle" ></i></a>
+        </div> 
       <div id="movieDescription6">
-        <h1></h1>
-        <h2></h2>
-        <p></p>
-      </div> -->
+        <h2>The Waiting Room</h2>
+        <h3>2015, 92 Minutes, DCP</h3>
+        <p>Jasmin, once a successful actor in former Yugoslavia, now lives in Toronto with his second wife and young son. While juggling a construction job and a busy audition schedule, he dreams of re-launching an old televised stage show that made him famous in his homeland. When he is cast in a role that triggers recollections of the civil war, he is forced to reconcile his current reality with memories of his past success.</p>
+      </div>
+      <div class="playButton" id="playButton6">
+          <a href="https://vimeo.com/135013305"><i class="far fa-play-circle" ></i></a>
+        </div> 
     </div>
+
     <div class="movieButton">
+      <div class="imgMovie" id="movieButton6">
+        <img class="movieButton1" src="photos/waiting_room1.jpg" width="300" height="200">
+        <h3 id="h3">The Waiting Room</h3>
+      </div>
       <div class="imgMovie" id="movieButton1">
         <img class="movieButton1" src="photos/krivina_still2.jpg" width="300" height="200">
         <h3 id="h3">Krivina</h3>
@@ -104,17 +126,43 @@
 <div class="section" id="3">
   <a id="reel" class="section smooth"></a>
     <h1>Reel</h1>
+    <div class="reel">
+      <iframe src="https://player.vimeo.com/14629783" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 </div>
 
 <div class="section" id="4">
   <a id="contact" class="section smooth"></a>
     <h1>Contact</h1>
     <hr>
-    <p id="bio">e-mail: igor.drljaca@gmail.com
-
-	phone: +1-416-918-7970</p>
+    <div id="contactPage">
+      <p id="emailPhone">
+      Call me at +1-416-918-7970 or<a id="email" href="mailto:igor.drljaca@gmail.com">click here to email me</a>
+      </p>
+      <div class="contact-form">
+        <form action="https://formspree.io/damir.drljaca@hotmail.com" method="POST">
+          <div class="form-left">
+            <input id="contact_name" type="text" name="name" placeholder="Your name"><br>
+            <input id="contact_email" type="text" name="email" placeholder="Email"><br>
+            <input id="contact_phone" type="text" name="phone" placeholder="Phone number"><br>
+          </div>
+            <textarea class="enquiry" name="contact_enquiry" placeholder="What is on your mind" >
+            </textarea>
+          <div class="submit-row">
+            <button class="submit" value="Submit">Submit</button>
+          </div>
+          <!-- <input type="hidden" name="_next" value="#"> -->
+          <input type="text" name="_gotcha" style="display:none">
+        </form>
+      </div>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
+<footer>
+  <div id="footer">
+    <a id="footer" href="http://www.damirdrljaca.com">Created by DamirDrljaca.com<i class="fal fa-copyright"> with a lot of <i class="fas fa-coffee"></i></i> </a>
+  </div>
+</footer>
 </html>

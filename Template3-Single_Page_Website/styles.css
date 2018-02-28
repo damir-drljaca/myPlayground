@@ -10,6 +10,10 @@ nav {
 
 }
 
+#nav a:hover{
+    color: grey;
+}
+
 a {
     margin: 0 10px 0 10px;
     text-decoration: none;
@@ -17,6 +21,9 @@ a {
     color: #eee;
 }
 
+#email{
+    color: black;
+}
 html {
     height: 100%;
     background-color: #F4F4F4;
@@ -26,6 +33,15 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+img{
+    -moz-box-shadow: 3px 3px 4px #444;
+    -webkit-box-shadow: 3px 3px 4px #444;
+    box-shadow:  3px 3px 4px #444;
+}
+img:hover{
+    opacity: 0.5;
 }
 
 h1 {
@@ -39,7 +55,11 @@ h1 {
     margin-bottom: 57px;
     text-align: center;
     text-indent: 24px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+
 }
 
 h2{
@@ -87,14 +107,22 @@ hr{
     width: 616px;
 }*/
 
+#footer{
+	color: black;
+
+}
 .section {
     height: 100%;
-    padding-top: 20px;
+    margin-bottom:20px;
 
 }
 .filmSection{
     background-repeat: no-repeat;
-    background-size: cover; 
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    background-position:center; 
 }
 .movieButton{
     display: grid;
@@ -142,7 +170,28 @@ hr{
     color: white;
     position: absolute;
 }
+#movieDescription6{
+    margin-top: -250px;
+    visibility: hidden;
+    color: white;
+    position: absolute;
+}
+.playButton{
+    text-align: center !important;
+    display: inline-block;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 12em;
+}
 
+.playButton:hover{
+	opacity: 0.5;
+}
 #bio{
     color: black;
     font-family: 'Cormorant Garamond';
@@ -156,6 +205,127 @@ hr{
     float: none;
     text-align: justify;
 }
+
+.reel{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+}
+
 #name{
     text-transform: none;
+}
+
+#contactPage{
+    max-width:700px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}
+#emailPhone{
+    color: black;
+    font-family: 'Cormorant Garamond';
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px;
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto 48px;
+    float: none;
+    text-align: center;
+}
+.contact-form{
+    max-width:700px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    box-sizing: content-box;
+    display: inline-block;
+    float: none;
+    line-height: 20px;
+    position: static;
+    z-index: auto;
+    align-items: center;
+}
+.form-left{
+    width: 273px;
+    margin-right: 14px;
+    font-size: 1em;
+    color: #363636;
+    box-sizing: content-box;
+    display: block;
+    float: left;
+    position: static;
+    z-index: auto;
+}
+/*#contact_name{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    line-height: 25px;
+    position: static;
+    z-index: auto;
+}*/
+
+input{
+    line-height: 26px;
+    width: 280px;
+    box-sizing: border-box;
+    z-index: auto;
+    position: static;
+    display: block;
+    border-top: 1px solid #c2c2c2;
+}
+textarea {
+    width: 400px;
+    height: 130px;
+    line-height:24px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    float: right;
+    margin: 0 0 25px 0;
+    border-top: 1px solid #c2c2c2;
+    border-left: 0px
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 11px 0px 11px 10px;
+    display: inline-block;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.submit-row{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    align-items: center;
+}
+
+/* Extra small devices */
+@media(max-width:544px){
+    
+}
+/* Small devices */
+@media(min-width:544px){
+    
+}
+/* Medium devices */
+@media(min-width:768px){
+    
+}
+/* Large devices */
+@media(min-width:992px){
+    .playButton{
+        padding-bottom:20px;
+        font-size:7em;
+    }
+}
+/* Exrta Large devices */
+@media(min-width:1200px){
+    
 }
